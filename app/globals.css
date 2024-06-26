@@ -2,32 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-family: "Monaco";
+  border: 5px solid black;
+  margin: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.section-welcome {
+  min-height: 45vw;
+  border-bottom: 3px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.desktop-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading-huge {
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-size: 88px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.section-hours-and-location {
+  min-height: 45vw;
+  border-bottom: 3px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.hours-location-image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-item {
+  flex: 1;
+  background-image: url("/Taco.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.card-info {
+  background-color: rgba(255, 228, 219, 0.95); /* Adding transparency */
+  border: 3px solid #000;
+  border-radius: 24px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card-info h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; /* Darker text color for better contrast */
+}
+
+.card-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555; /* Darker text color for better contrast */
+}
+
+.card-info .hours p {
+  margin-bottom: 0.5rem;
+}
+
+.card-info .phone {
+  font-weight: bold; /* Emphasize the phone number */
+  color: #333; /* Darker text color for better contrast */
+}
+
+@media only screen and (max-device-width: 600px) {
+  .heading-huge {
+    letter-spacing: 0;
+    font-size: 48px;
+  }
+  .welcome-title-wrapper {
+    max-width: 320px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 991px) {
+  .section-welcome {
+    flex-direction: column;
   }
 }
