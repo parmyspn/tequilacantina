@@ -100,7 +100,7 @@ body {
 }
 
 .background-cover {
-  min-height: 637px;
+  min-height: none;
   position: relative;
   height: 60vh; /* Make the cover take the full height of the viewport */
   width: 100%;
