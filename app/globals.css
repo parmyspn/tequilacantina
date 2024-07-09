@@ -160,5 +160,7 @@ body {
 @media (max-width: 767px) {
   .background-cover-image {
     background-image: url("/file.png");
+    background-size: contain; /* or another suitable size */
+    background-position: center; /* adjust as necessary */
   }
 }
