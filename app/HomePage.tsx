@@ -16,9 +16,9 @@ function HomePage() {
           <div className="hours">
             <p>Monday - Thursday: 11 AM - 10 PM</p>
             <p>Friday and Saturday: 11 AM - 11 PM</p>
-            <p>Sunday: 11 AM - 9 PM</p>
+            <p>Sunday: 11 AM - 10 PM</p>
           </div>
-          <p className="phone">Phone: 604-770-4433</p>
+          <p className="phone">Phone: 236-551-2243</p>
         </div>
       </div>
     </div>
