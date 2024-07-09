@@ -22,8 +22,8 @@ export const MenuSection = ({ tab }: MenuSectionProps) => {
                 <h3 className="flex text-md underline justify-between mt-3">
                   <span>{section.subTitle.title}</span>{" "}
                   <span className="grid grid-cols-2 space-x-2">
-                    {section.subTitle.size.map((s) => (
-                      <span>{s}</span>
+                    {section.subTitle.size.map((s, index) => (
+                      <span key={index}>{s}</span>
                     ))}
                   </span>
                 </h3>
@@ -37,8 +37,10 @@ export const MenuSection = ({ tab }: MenuSectionProps) => {
                       {item.price && <span>${item.price}</span>}
                       {item.prices && (
                         <div className="grid grid-cols-2 space-x-2">
-                          {item.prices.map((p) => (
-                            <span className="">${p}</span>
+                          {item.prices.map((p, index) => (
+                            <span key={index} className="">
+                              ${p}
+                            </span>
                           ))}{" "}
                         </div>
                       )}
