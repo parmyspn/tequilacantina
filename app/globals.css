@@ -4,8 +4,21 @@
 
 body {
   font-family: "Monaco";
-  border: 5px solid black;
-  margin: 20px;
+  margin: 0;
+}
+.font {
+  --wp--preset--font-family--system-font: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
+}
+.h1 {
+  font-size: clamp(2.032rem, 2.032rem + ((1vw - 0.2rem) * 2.896), 3.625rem);
+  line-height: 1.2;
+}
+.about-us-paragraph {
+  max-width: 650px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .section-welcome {
@@ -84,6 +97,48 @@ body {
 .card-info .phone {
   font-weight: bold; /* Emphasize the phone number */
   color: #333; /* Darker text color for better contrast */
+}
+
+.background-cover {
+  min-height: 637px;
+  position: relative;
+  height: 60vh; /* Make the cover take the full height of the viewport */
+  width: 100%;
+}
+
+.background-cover-image {
+  background-image: url("/background.png");
+  background-size: cover;
+  background-position: 25% 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.has-parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 1000ms;
+  transition-delay: 1000ms;
+}
+
+.block-cover__inner-container {
+  color: white; /* Ensure content is visible against the background */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically and horizontally */
 }
 
 @media only screen and (max-device-width: 600px) {

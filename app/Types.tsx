@@ -1,8 +1,10 @@
 export interface MenuItem {
   name: string;
   description?: string;
-  price: number;
+  price?: number;
+  prices?: number[];
   addOn?: AddOn[];
+  restrictions?: string;
 }
 
 export interface AddOn {
@@ -12,6 +14,7 @@ export interface AddOn {
 
 export interface Section {
   title: string;
+  subTitle?: SubTitle;
   menuItems: MenuItem[];
 }
 
@@ -23,4 +26,9 @@ export interface MenuTab {
 
 export interface Menu {
   menuTabs: MenuTab[];
+}
+
+export interface SubTitle {
+  title: string;
+  size: string[];
 }
