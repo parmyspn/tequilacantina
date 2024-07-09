@@ -99,25 +99,6 @@ body {
   color: #333; /* Darker text color for better contrast */
 }
 
-.background-cover {
-  min-height: none;
-  position: relative;
-  height: 60vh; /* Make the cover take the full height of the viewport */
-  width: 100%;
-}
-
-.background-cover-image {
-  background-image: url("/background.png");
-  background-size: cover;
-  background-position: 25% 30%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
 .has-parallax {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -157,10 +138,37 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
+  .background-cover {
+    position: relative;
+    height: 60vh; /* Make the cover take the full height of the viewport */
+    width: 100%;
+  }
   .background-cover-image {
     background-image: url("/file.png");
-    background-size: contain; /* or another suitable size */
-    background-position: center; /* adjust as necessary */
+    background-size: cover;
+    background-position: 20% 30%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .background-cover-image {
+    background-image: url("/background.png");
+    background-size: cover;
+    background-position: 25% 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .background-cover {
+    min-height: none;
+    position: relative;
+    height: 60vh; /* Make the cover take the full height of the viewport */
+    width: 100%;
   }
 }
