@@ -156,3 +156,9 @@ body {
     flex-direction: column;
   }
 }
+
+@media (max-width: 767px) {
+  .background-cover-image {
+    background-image: url("/file.png");
+  }
+}
