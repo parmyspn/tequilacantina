@@ -2,7 +2,7 @@
 import { GetStaticProps } from "next";
 import { useState } from "react";
 import menuData from "./menuData";
-import { MenuSection } from "./components/MenuSection";
+import { MenuSection } from "./Menu/MenuSection";
 import { MenuTab } from "./Types";
 
 const tabs = [
@@ -11,6 +11,8 @@ const tabs = [
   { name: "Tacos", href: "#", current: false },
   { name: "Dessert", href: "#", current: false },
   { name: "Sides", href: "#", current: false },
+  { name: "Tequila", href: "#", current: false },
+  { name: "Cocktails", href: "#", current: false },
   { name: "Drinks", href: "#", current: false },
 ];
 
@@ -38,8 +40,8 @@ export default function MenuTabs() {
   };
 
   return (
-    <div id="menuTabs" className="w-full sm:w-9/12 sm:mr-10 mt-4">
-      <div className="block">
+    <div id="menuTabs" className="flex flex-col items-center mt-4">
+      <div className="">
         <nav
           className="flex flex-wrap space-x-2 sm:space-x-4 justify-center"
           aria-label="Tabs"

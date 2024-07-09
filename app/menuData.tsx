@@ -10,16 +10,16 @@ const menuData: Menu = {
           title: "Appetizers",
           menuItems: [
             {
-              name: "Guacamole",
+              name: "Guacamole 8 chips",
               description:
                 "freshly mashed avocado topped with pico de gallo, feta cheese and a side of our house-made chips.",
-              price: 16.99,
+              price: 14.99,
             },
             {
               name: "Frijoles Puercos",
               description:
                 "mix of refried beans with chorizo, jalapeño, feta cheese and a side of our house-made chips.",
-              price: 10.99,
+              price: 9.99,
             },
             {
               name: "Chimichanga",
@@ -31,7 +31,7 @@ const menuData: Menu = {
               name: "Nachos",
               description:
                 "corn chips topped with refried beans, melted mozzarella cheese, pico de gallo, sour cream, jalapeños and guacamole.",
-              price: 17.99,
+              price: 16.99,
               addOn: [
                 {
                   description: "asada, pastor, chorizo, tinga de pollo",
@@ -43,19 +43,19 @@ const menuData: Menu = {
               name: "Ceviche",
               description:
                 "prawns marinated in lime, tossed with red onions, tomato, cilantro, cucumbers and chef’s sauce.",
-              price: 20.99,
+              price: 19.99,
             },
             {
               name: "Aguachile De Camaron",
               description:
                 "8oz raw prawns, spicy salsa aguachile, cucumbers and red onions.",
-              price: 21.99,
+              price: 19.99,
             },
             {
               name: "Queso Fundido",
               description:
                 "melted mozzarella cheese dip topped with onions, cilantro, salsa verde and a side of our house-made chips.",
-              price: 15.99,
+              price: 14.99,
               addOn: [
                 {
                   description: "asada, pastor, chorizo, tinga de pollo",
@@ -72,13 +72,19 @@ const menuData: Menu = {
               name: "Tarasca",
               description:
                 "creamy soup made of jitomate and beans topped with feta cheese, tortilla strips, avocado, sour cream and fried ancho chiles.",
-              price: 12.99,
+              price: 10.99,
+              addOn: [
+                {
+                  description: "shredded plain chicken",
+                  price: 5.99,
+                },
+              ],
             },
             {
               name: "Birria",
               description:
                 "consommé with shredded beef served with onions and cilantro. Comes with a side of 5 corn tortillas and salsa picante.",
-              price: 14.99,
+              price: 12.99,
               addOn: [
                 {
                   description: "Sub 5 flour tortillas",
@@ -113,19 +119,19 @@ const menuData: Menu = {
               name: "Camarones A La Diabla",
               description:
                 "prawns sautéed in butter, garlic and a spicy sweet and sour salsa. Served with rice and house salad.",
-              price: 24.99,
+              price: 21.99,
             },
             {
               name: "Camarones Mojo De Ajo",
               description:
                 "prawns sautéed in butter and garlic with a touch of freshly squeezed lime served with rice and house salad.",
-              price: 24.99,
+              price: 21.99,
             },
             {
               name: "Mole Con Pollo",
               description:
                 "grilled chicken breast on a bed of rice topped with mole sauce, pickled onions, sour cream and cilantro. Served with 5 corn tortillas.",
-              price: 0,
+              price: 19.99,
               addOn: [
                 {
                   description: "Sub 5 flour tortillas",
@@ -137,13 +143,13 @@ const menuData: Menu = {
               name: "Quesadilla",
               description:
                 "13in flour tortillas filled with cheese and your choice of meat. Side of house salad and sour cream.",
-              price: 21.99,
+              price: 19.99,
             },
             {
               name: "Burrito",
               description:
-                "flour tortilla with mozzarella cheese, rice, beans, pico de gallo, salsa guacamole and sour cream.",
-              price: 21.99,
+                "13in flour tortilla with mozzarella cheese, rice, beans, pico de gallo, salsa guacamole and sour cream.",
+              price: 19.99,
               addOn: [
                 {
                   description: "Make it WET",
@@ -155,7 +161,7 @@ const menuData: Menu = {
               name: "Enchiladas",
               description:
                 "three corn tortillas stuffed with your choice of meat. Served with rice, beans and your choice of salsa.",
-              price: 0,
+              price: 19.99,
               addOn: [
                 {
                   description: "Sub Mole Sauce",
@@ -167,7 +173,7 @@ const menuData: Menu = {
               name: "Molcajete Mar y Tierra",
               description:
                 "top sirloin, chicken breast, prawns, chorizo, tender cactus, melted cheese topped with chiles torreados. Served with rice, beans and 10 corn tortillas. (Serves 2-3 people)",
-              price: 0,
+              price: 49.99,
               addOn: [
                 {
                   description: "Sub 10 flour tortillas",
@@ -179,7 +185,7 @@ const menuData: Menu = {
               name: "Alambre",
               description:
                 "your choice of beef, chicken or pastor sautéed with bacon, onions, green peppers, mushrooms and house made salsa. Served with rice, beans and 5 corn tortillas.",
-              price: 24.99,
+              price: 21.99,
               addOn: [
                 {
                   description: "melted mozzarella cheese",
@@ -203,7 +209,7 @@ const menuData: Menu = {
               name: "Taco Salad",
               description:
                 "lettuce tossed in your choice of salsa guacamole or chipotle-garlic mayo on a Mexican bed of rice. Served with seasoned chicken breast, pico de Gallo, feta cheese, pineapple, avocado, bacon and corn tortilla strips.",
-              price: 21.99,
+              price: 19.99,
               addOn: [
                 {
                   description: "Sub prawns",
@@ -264,13 +270,19 @@ const menuData: Menu = {
               name: "Vampiros",
               description:
                 "two 6 inch crispy corn tortillas with melted mozzarella cheese, carne asana, onion and cilantro.",
-              price: 18.99,
+              price: 17.99,
             },
             {
               name: "Estilo Baja",
               description:
                 "prawns or fish, battered or grilled on a 6 inch flour tortilla with cabbage, pico de gallo, chipotle mayo and avocado.",
-              price: 7.99,
+              price: 6.99,
+            },
+            {
+              name: "Quesabirrias",
+              description:
+                "Two beef quesabirrias with their dipping consommé. Topped with onion and cilantro and a side of pickled onion and chile toreado.",
+              price: 17.99,
             },
           ],
         },
@@ -321,9 +333,15 @@ const menuData: Menu = {
             {
               name: "Pollo Con Mole",
               description:
-                "shredded chicken cooked in a spiced peanut and chocolate sauce. Topped with sour cream and pickled onions. Contains nuts",
+                "shredded chicken cooked in a spiced peanut and chocolate sauce. Topped with sour cream and pickled onions.",
+              restrictions: "Contains nuts and gluten",
               price: 5.99,
             },
+          ],
+        },
+        {
+          title: "Veggie",
+          menuItems: [
             {
               name: "Pastor Vegano",
               description: "marinated soybeans topped with onion and cilantro.",
@@ -373,12 +391,12 @@ const menuData: Menu = {
             {
               name: "Tres Leches Cake",
               description: "",
-              price: 11.99,
+              price: 10.99,
             },
             {
               name: "Flan",
               description: "",
-              price: 11.99,
+              price: 10.99,
             },
           ],
         },
@@ -465,7 +483,7 @@ const menuData: Menu = {
     },
     {
       id: 6,
-      name: "Drinks",
+      name: "Cocktails",
       sections: [
         {
           title: "",
@@ -492,24 +510,24 @@ const menuData: Menu = {
               name: "Mezcalita",
               description:
                 "Fandango Mezcal, Orange Liqueur, Lime Juice, Orange Juice, Simple Syrup, Orange Bitters, Tajin Rim",
-              price: 14,
+              price: 13,
             },
             {
               name: "La Picante (1.5oz)",
               description:
                 "Infused Jalapeno Jose Cuervo Tequila, Jalapeno Syrup, Orange Liqueur, Lime Juice, Tajin Rim",
-              price: 15,
+              price: 13,
             },
             {
               name: "Coconut Guava Margarita (1.5oz)",
               description:
                 "1800 coconut tequila, Orange Liqueur, Coconut syrup, Guava Puree, Lime Juice",
-              price: 16,
+              price: 14,
             },
             {
               name: "Hibiscus-tini (1.5oz)",
               description: "Bombay Gin, Cointreau, Lime Juice, Hibiscus Syrup",
-              price: 15,
+              price: 14,
             },
             {
               name: "Dirty Horchata (1oz)",
@@ -520,13 +538,7 @@ const menuData: Menu = {
               name: "Michelada (1oz)",
               description:
                 "Your choice of imported beer, Maggi sauce, Tabasco, Worcestershire, Clamato, Lime Juice, Tamarind Stick, Tajin Rim",
-              price: 15,
-              addOn: [
-                {
-                  description: "Add four Grilled Shrimp",
-                  price: 4,
-                },
-              ],
+              price: 14,
             },
             {
               name: "The Bulldog (1.5oz + 207ml)",
@@ -542,7 +554,7 @@ const menuData: Menu = {
               name: "Cosmorita (1.5oz)",
               description:
                 "Jose Cuervo Tequila, Cointreau, Lime Juice, Cranberry Juice",
-              price: 14,
+              price: 13,
             },
             {
               name: "Pina Colada (1.5oz)",
@@ -554,13 +566,13 @@ const menuData: Menu = {
               name: "Mango Mojito (1oz)",
               description:
                 "Bacardi White, Fresh Mint, Mango Puree, Lime Juice, Sprite",
-              price: 15,
+              price: 13,
             },
             {
               name: "La Diablita (2oz)",
               description:
                 "Hornitos Silver, House Red Wine, Lime Juice, Simple Syrup",
-              price: 15,
+              price: 14,
             },
             {
               name: "Fishbowl (4oz)",
@@ -581,43 +593,476 @@ const menuData: Menu = {
           menuItems: [
             {
               name: "Jarritos/Mexican coke",
-              price: 5,
+              price: 4.99,
             },
             {
               name: "Horchata",
-              price: 6,
+              price: 5.99,
             },
             {
               name: "Jamaica",
-              price: 6,
+              price: 5.99,
             },
             {
               name: "Pop",
-              price: 6,
+              price: 3.99,
             },
             {
               name: "Corona Sunbrew",
-              price: 7,
+              price: 5.99,
             },
             {
               name: "Coffee",
-              price: 4,
+              price: 3.99,
             },
             {
               name: "Sangria senorial",
-              price: 6,
+              price: 5.99,
             },
             {
               name: "Lemonade",
-              price: 4,
+              price: 3.99,
             },
             {
               name: "Juice",
-              price: 4,
+              price: 3.99,
             },
             {
               name: "Virgin cocktails",
+              price: 5.99,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 7,
+      name: "Tequila",
+      sections: [
+        {
+          title: "",
+          subTitle: {
+            title: "Blanco",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Clase Azul",
+              prices: [35, 45],
+            },
+            {
+              name: "Don Julio",
+              prices: [15, 21],
+            },
+            {
+              name: "Patron",
+              prices: [15, 21],
+            },
+            {
+              name: "Casamigos",
+              prices: [14, 20],
+            },
+            {
+              name: "Hornitos",
+              prices: [9, 16],
+            },
+            {
+              name: "Espolon",
+              prices: [9, 15],
+            },
+            {
+              name: "Sauza",
+              prices: [9, 15],
+            },
+            {
+              name: "Espolon",
+              prices: [9, 15],
+            },
+            {
+              name: "Centenario",
+              prices: [9, 15],
+            },
+            {
+              name: "1800 Coconut",
+              prices: [9, 15],
+            },
+            {
+              name: "1800 Silver",
+              prices: [9, 15],
+            },
+            {
+              name: "Cazadores",
+              prices: [8, 14],
+            },
+            {
+              name: "Jimador",
+              prices: [8, 14],
+            },
+            {
+              name: "Olmeca",
+              prices: [8, 14],
+            },
+            {
+              name: "Jose Cuervo Trad Plata",
+              prices: [7, 13],
+            },
+          ],
+        },
+        {
+          title: "",
+          subTitle: {
+            title: "Resposado",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Clase Azul",
+              prices: [40, 50],
+            },
+            {
+              name: "Patron",
+              prices: [16, 25],
+            },
+            {
+              name: "Don Julio",
+              prices: [16, 22],
+            },
+            {
+              name: "Casamigos",
+              prices: [14, 21],
+            },
+            {
+              name: "Herradura",
+              prices: [13, 18],
+            },
+            {
+              name: "Olmeca Gold",
+              prices: [3, 18],
+            },
+            {
+              name: "1800",
+              prices: [10, 16],
+            },
+            {
+              name: "Sauza Gold",
+              prices: [9, 15],
+            },
+            {
+              name: "Espolon",
+              prices: [9, 15],
+            },
+            {
+              name: "Cazadores",
+              prices: [9, 15],
+            },
+            {
+              name: "1800 Silver",
+              prices: [9, 15],
+            },
+            {
+              name: "Cazadores",
+              prices: [8, 14],
+            },
+            {
+              name: "Jimador",
+              prices: [8, 15],
+            },
+            {
+              name: "Jose Cuervo Trad Resposado",
+              prices: [8, 14],
+            },
+          ],
+        },
+        {
+          title: "",
+          subTitle: {
+            title: "AÑEJO",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Don Julio 1942",
+              prices: [40, 50],
+            },
+            {
+              name: "Patron",
+              prices: [18, 24],
+            },
+            {
+              name: "Don Julio",
+              prices: [16, 22],
+            },
+            {
+              name: "Tres Generaciones",
+              prices: [15, 21],
+            },
+            {
+              name: "Hornitos Black Barrel",
+              prices: [14, 20],
+            },
+            {
+              name: "1800 Anejo",
+              prices: [14, 20],
+            },
+            {
+              name: "Cazadores",
+              prices: [12, 18],
+            },
+          ],
+        },
+        {
+          title: "",
+          subTitle: {
+            title: "CRISTALINO",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Don Julio 70",
+              prices: [20, 30],
+            },
+            {
+              name: "Maestro Dobel",
+              prices: [16, 25],
+            },
+            {
+              name: "1800 Cristalino",
+              prices: [15, 22],
+            },
+            {
+              name: "Hornitos Cristalino",
+              prices: [13, 18],
+            },
+          ],
+        },
+        {
+          title: "",
+          subTitle: {
+            title: "MEZCAL",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Casamigos",
+              prices: [16, 22],
+            },
+            {
+              name: "Siete Misterios",
+              prices: [12, 18],
+            },
+            {
+              name: "400 Conejos",
+              prices: [10, 16],
+            },
+            {
+              name: "HFandango",
+              prices: [9, 15],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 7,
+      name: "Drinks",
+      sections: [
+        {
+          title: "Liquor",
+          menuItems: [
+            {
+              name: "Kahlua",
+              prices: [8, 12],
+            },
+            {
+              name: "Baileys",
+              prices: [8, 12],
+            },
+            {
+              name: "Disaronno",
+              prices: [8, 12],
+            },
+            {
+              name: "Liquor 43",
+              prices: [12, 18],
+            },
+          ],
+        },
+        {
+          title: "Beer",
+          menuItems: [
+            {
+              name: "Bucket (5 bottles)",
+              price: 35,
+            },
+            {
+              name: "Corona (355 ml)",
+              price: 8,
+            },
+            {
+              name: "Pacifico",
+              price: 8,
+            },
+            {
+              name: "Modelo",
+              price: 8,
+            },
+            {
+              name: "Negra Modelo",
+              price: 8,
+            },
+            {
+              name: "Sol",
+              price: 8,
+            },
+            {
+              name: "XX Lager",
+              price: 8,
+            },
+          ],
+        },
+        {
+          title: "Draft Beer",
+          menuItems: [
+            {
+              name: "House Lager",
               price: 6,
+            },
+            {
+              name: "Local Rotating Tap",
+              price: 8,
+            },
+            {
+              name: "Corona",
+              price: 9,
+            },
+          ],
+        },
+        {
+          title: "Wine",
+          subTitle: {
+            title: "",
+            size: ["6oz", "9oz"],
+          },
+          menuItems: [
+            {
+              name: "House White",
+              prices: [8, 12],
+            },
+            {
+              name: "House Red",
+              prices: [8, 12],
+            },
+          ],
+        },
+        {
+          title: "Gin",
+          subTitle: {
+            title: "",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Hendricks",
+              prices: [10, 16],
+            },
+            {
+              name: "Bombay",
+              prices: [9, 15],
+            },
+            {
+              name: "Boodles",
+              prices: [8, 14],
+            },
+          ],
+        },
+        {
+          title: "Rum",
+          subTitle: {
+            title: "",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Kraken Black Spiced",
+              prices: [8, 12],
+            },
+            {
+              name: "Bacardi White",
+              prices: [9, 15],
+            },
+            {
+              name: "Malibu",
+              prices: [9, 15],
+            },
+            {
+              name: "Captain Morgan",
+              prices: [8, 14],
+            },
+          ],
+        },
+        {
+          title: "Vodka",
+          subTitle: {
+            title: "",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "Grey Goose",
+              prices: [8, 12],
+            },
+            {
+              name: "Ketel One",
+              prices: [9, 15],
+            },
+            {
+              name: "Titos",
+              prices: [8, 14],
+            },
+            {
+              name: "Smirnoff",
+              prices: [7, 13],
+            },
+            {
+              name: "Absolut",
+              prices: [7, 13],
+            },
+          ],
+        },
+        {
+          title: "Whiskey",
+          subTitle: {
+            title: "",
+            size: ["1oz", "2oz"],
+          },
+          menuItems: [
+            {
+              name: "JW Gold Label",
+              prices: [18, 30],
+            },
+            {
+              name: "JW Black Label",
+              prices: [16, 22],
+            },
+            {
+              name: "JW Red Label",
+              prices: [13, 20],
+            },
+            {
+              name: "Jameson",
+              prices: [9, 16],
+            },
+            {
+              name: "Fireball",
+              prices: [9, 16],
+            },
+            {
+              name: "Jack Daniels",
+              prices: [8, 15],
+            },
+            {
+              name: "Crown Royal",
+              prices: [8, 15],
             },
           ],
         },
