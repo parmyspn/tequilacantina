@@ -6,6 +6,13 @@ import NavBar from "./NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  keywords: [
+    "Tequila Cantina",
+    "tequila cantina",
+    "mexican restaurant",
+    "mexican restaurant in vancouver",
+    "Vancouver Mexican restaurants",
+  ],
   title: "Tequila Cantina Lonsdale",
   description:
     "A Mexican inpired restaurant that celebrates the rich culture and cuisine of Mexico",
